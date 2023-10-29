@@ -1,0 +1,5 @@
+type Error{
+    name:String
+    code:String
+    Description:String
+}

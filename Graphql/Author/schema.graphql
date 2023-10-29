@@ -1,0 +1,18 @@
+type Author {
+    name:String
+    Books:BooksConnectionResponse
+    age:String
+}
+
+union AuthorResponse = Author | Error
+
+type AuthorNode{
+    node:AuthorResponse
+    cursor:String
+}
+
+type AuthorConnectionResponse {
+    edges:[AuthorNode]
+}
+
+union AuthorConnectionResponse = AuthorConnectionResponse | Error

@@ -1,0 +1,20 @@
+type Book{
+    id:String
+    title:String
+    Author:String
+    summary:String
+    publishDate:String
+}
+
+union BookResponse = Book | Error
+
+type BooksNode{
+    node:BookResponse
+    cursor:String
+}
+
+type BooksConnectionResponse {
+    edges:[BooksNode]
+}
+
+union BooksConnectionResponse = BooksConnectionResponse | Error
