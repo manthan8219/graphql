@@ -5,3 +5,5 @@ import pine from 'pine';
 
 // exporting logger for global use
 export const logger = pine()
+
+export const mongo_url = process.env['MONGO_DB_URL'] || 'https://mongodb:27017'; 

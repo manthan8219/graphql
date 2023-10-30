@@ -5,8 +5,10 @@
   "license": "MIT",
   "dependencies": {
     "@apollo/server": "^4.9.5",
+    "@graphql-codegen/cli": "^5.0.0",
     "@types/node": "^20.8.9",
     "graphql": "^16.8.1",
+    "mongoose": "^7.6.3",
     "pine": "^1.1.1",
     "typescript": "^5.2.2"
   }
